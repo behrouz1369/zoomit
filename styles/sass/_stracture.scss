@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Varaibles
+$fontiransans: 'Iransans';
+$black-color:#242424;
+$black-color-0:#000;
+$black-color-3:#333;
+$black-color-6:#666;
+$black-color-9:#999;
+$gray-color-1:#a1a0a0;
+$gray-color-a:#aaa;
+$red-color:#e51a2d;
+$white-color:white;
+
+//Font Size
+$font-size-sm:.75rem;
+$font-size-md:.87rem;
+$font-size-lg:1.2rem;
+$font-size-xl:1.5rem;
+
+
+////////Margin
+.mt-30px{
+    margin-top: 30px;
+}
+
+.mt-20px{
+    margin-top: 20px;
+}
+
+.mb-10px{
+    margin-bottom: 10px !important;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,
+input,textarea,a,button,select,checkbox{
+    font-family: $fontiransans;
+}
+
+body{
+    font-family: $fontiransans;
+    font-size: 14px;
+    direction: rtl;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 80%;
+
+    @media screen and (max-width:1225px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width:768px) {
+        padding: 0 15px;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Fonts
+@font-face {
+    font-family: 'Iransans_Thin';
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_Light.eot');
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_Light.eot#iefix') format('embedded-opentype'),
+         url('../../fonts/iransans5/fonts/woff/IRANSansWeb_Light.woff') format('woff'),
+         url('../../fonts/iransans5/fonts/ttf/IRANSansWeb_Light.ttf') format('truetype'),
+         url('../../fonts/iransans5/fonts/IRANSansWeb_Light.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iransans_Web';
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb.eot');
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb.eot#iefix') format('embedded-opentype'),
+         url('../../fonts/iransans5/fonts/woff/IRANSansWeb.woff') format('woff'),
+         url('../../fonts/iransans5/fonts/ttf/IRANSansWeb.ttf') format('truetype'),
+         url('../../fonts/iransans5/fonts/IRANSansWeb.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IransansWeb_Black';
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_Black.eot');
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_Black.eot#iefix') format('embedded-opentype'),
+         url('../../fonts/iransans5/fonts/woff/IRANSansWeb_Black.woff') format('woff'),
+         url('../../fonts/iransans5/fonts/ttf/IRANSansWeb_Black.ttf') format('truetype'),
+         url('../../fonts/iransans5/fonts/IRANSansWeb_Black.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IransansWeb_Medium';
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_Medium.eot');
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_Medium.eot#iefix') format('embedded-opentype'),
+         url('../../fonts/iransans5/fonts/woff/IRANSansWeb_Medium.woff') format('woff'),
+         url('../../fonts/iransans5/fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype'),
+         url('../../fonts/iransans5/fonts/IRANSansWeb_Medium.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IransansWeb_UltraLight';
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_UltraLight.eot');
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_UltraLight.eot#iefix') format('embedded-opentype'),
+         url('../../fonts/iransans5/fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+         url('../../fonts/iransans5/fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype'),
+         url('../../fonts/iransans5/fonts/IRANSansWeb_UltraLight.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iransans';
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb.eot');
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb.eot#iefix') format('embedded-opentype'),
+         url('../../fonts/iransans5/fonts/woff/IRANSansWeb.woff') format('woff'),
+         url('../../fonts/iransans5/fonts/ttf/IRANSansWeb.ttf') format('truetype'),
+         url('../../fonts/iransans5/fonts/IRANSansWeb.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Iransans_Bold';
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_Bold.eot');
+    src: url('../../fonts/iransans5/fonts/eot/IRANSansWeb_Bold.eot#iefix') format('embedded-opentype'),
+         url('../../fonts/iransans5/fonts/woff/IRANSansWeb_Bold.woff') format('woff'),
+         url('../../fonts/iransans5/fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype'),
+         url('../../fonts/iransans5/fonts/IRANSansWeb_Bold.svg#CartoGothicStdBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//////////////////////////////////////////////////////////////////////
+/// Mixins
+@mixin f-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//Mixins Flex Direction Column
+@mixin fd-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+//Mixins Flex center
+@mixin f-center {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@mixin f-center-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
